@@ -1,38 +1,307 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Tim J. Schoonbeek</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="academicons-1.9.4/css/academicons.css">
+
+  <style>
+    .logo_header {
+      margin-top: 2em;
+      margin-left: 2em;
+    }
+
+    .publication {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .publication:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .publication .image {
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      width: 350px;
+    }
+
+    .publication .title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .publication .authors {
+      margin-bottom: 0.5rem;
+    }
+
+    .publication .links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .publication .links a {
+      margin-right: 1rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      .publication {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+
+    .experience {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .experience:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .experience .title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience ul {
+      margin-left: 2em;
+    }
+
+    .venue {
+      margin: 1rem;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 125px;
+      height: 25px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .logo_colab img {
+      height: 50px;
+      margin-left: 3em;
+      margin-right: 3em;
+      margin-top: 1em;
+    }
+
+    .logo:hover {
+      transform: scale(1.025);
+    }
+
+    .float-left-child {
+      float: left;
+      margin: 1rem;
+    }
+
+    .image {
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1; /* Add z-index to make the navigation bar always on top */
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #3B3B3B;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    main {
+      margin-top: 50px; /* Add margin to the top of the main content to prevent it from being covered by the navigation bar */
+    }
+  </style>
+</head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#Pubs">Publication</a></li>
+      <li><a href="#Exp">Experiences</a></li>
+    </ul>
+  </nav>
 
-  <!-- fonts -->
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <h1 class="title">
+              Tim J. Schoonbeek
+            </h1>
+            <h2 class="subtitle">
+              Computer Vision PhD Candidate -- <a href="mailto:t.j.schoonbeek@tue.nl">t.j.schoonbeek@tue.nl</a>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h1 class="is-size-1 has-text-centered">Hello, Bulma</h1>
-  <h2 class="is-size-2 has-text-right">Hello, Bulma</h2>
-  <h3 class="is-size-3">Hello, Bulma</h3>
-  <h4 class="is-size-7">Hello, Bulma</h4>
+  <section class="logo_header">
+    <div class="columns is-vcentered">
+      <div class="logo_colab">
+        <img src="logos/asml.png">
+      </div>
+      <div class="logo_colab">
+        <img src="logos/tue.png">
+      </div>
+      <div class="logo_colab">
+        <img src="logos/hri.png">
+      </div>
+      <!-- Add more logos as needed -->
+    </div>
+  </section>
 
-  <p class="is-size-4 is-uppercase is-italic">Hello again</p>
-  <p class="is-lowercase">Hello again</p>
-  <p class="has-text-weight-bold">Hello again</p>
-  <p class="has-text-weight-light">Hello again</p>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-third">
+          <figure class="image">
+            <img src="TimSchoonbeek.jpg">
+          </figure>
+          <h3 class="title is-3">Biography</h3>
+          <p>Biography -- to do!.</p>
+          <div class="parent">
+            <div class="child float-left-child">
+              <a href="https://scholar.google.com/citations?user=h_YDH0YAAAAJ" target="_blank">
+                <img src="logos/scholar.png" alt="Scholar" class="logo">
+              </a>
+            </div>
+            <div class="child float-left-child">
+              <a href="https://www.linkedin.com/in/timschoonbeek" target="_blank">
+                <img src="logos/linkedin.png" alt="LinkedIn" class="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h3 class="title is-3" id="Pubs">Publications</h3>
+          <section class="publication">
+            <div class="image">
+              <img src="publications/industreal.png">
+            </div>
+            <div class="details">
+              <h4 class="title is-4">IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting</h4>
+              <p class="authors"><u>Tim J. Schoonbeek</u>, Tim Houben, Hans Onvlee, Peter H.N. de With, Fons van der Sommen</p>
+              <p class="venue">WACV 2024</p>
+              <div class="links">
+                <p><span class="icon"><i class="ai ai-arxiv"></i></span><a href="https://arxiv.org/abs/2310.17323" target="_blank">arXiv</a></p>
+                <p><span class="icon"><i class="fab fa-github"></i></span><a href="https://github.com/TimSchoonbeek/IndustReal" target="_blank">Github</a></p>
+              </div>
+            </div>
+          </section>
+          <section class="publication">
+            <div class="image">
+              <img src="publications/beyondAR.png">
+            </div>
+            <div class="details">
+              <h4 class="title is-4">Beyond Action Recognition: Extracting Meaningful Information from Procedure Recordings</h4>
+              <p class="authors"><u>Tim J. Schoonbeek</u>, Hans Onvlee, Pierluigi Frisco, Peter H.N. de With, Fons van der Sommen</p>
+              <p class="venue">IEEE VR 2023 (abstract only)</p>
+              <div class="links">
+                <p><span class="icon"><i class="ai ai-ieee"></i></span><a href="https://ieeexplore.ieee.org/abstract/document/10108640" target="_blank">IEEE proceedings</a></p>
+              </div>
+            </div>
+          </section>
+          <section class="publication">
+            <div class="image">
+              <img src="publications/automaticlogging.png">
+            </div>
+            <div class="details">
+              <h4 class="title is-4">Augmented Reality for Automatically Generating Robust Manufacturing and Maintenance Logs</h4>
+              <p class="authors"><u>Tim J. Schoonbeek</u>, Pierluigi Frisco, Hans Onvlee, Peter H.N. de With, Fons van der Sommen</p>
+              <p class="venue">London Imaging Meeting 2022 (oral presentation)</p>
+              <div class="links">
+                <p><span class="icon"><i class="ai ai-archive"></i></span><a href="https://library.imaging.org/lim/articles/3/1/15" target="_blank">Publication</a></p>
+              </div>
+            </div>
+          </section>
+          <section class="publication">
+            <div class="image">
+              <img src="publications/risknet.png">
+            </div>
+            <div class="details">
+              <h4 class="title is-4">Learning to Predict Collision Risk from Simulated Video Data</h4>
+              <p class="authors"><u>Tim J. Schoonbeek</u>, Fabrizio J. Piva, Hamid R. Abdolhay, Gijs Dubbelman</p>
+              <p class="venue">IEEE IV 2022 (oral presentation)</p>
+              <div class="links">
+<!--                <p><span class="icon"><i class="ai ai-arxiv"></i></span><a href="arxiv" target="_blank">arXiv</a></p>-->
+                <p><span class="icon"><i class="ai ai-ieee"></i></span><a href="https://ieeexplore.ieee.org/abstract/document/9827228" target="_blank">IEEE proceedings</a></p>
+              </div>
+            </div>
+          </section>
+          <h3 class="title is-3" id="Exp">Experiences</h3>
+            <section class="experience">
+              <h4 class="title is-4">PhD Candidate <br><i>Eindhoven University of Technology</i> and <i>ASML Research</i> </h4>
 
-  <h2 class="title">Title</h2>
-  <h3 class="subtitle">Subtitle</h3>
+              <ul style="list-style-type:circle">
+                <li>Procedural action understanding</li>
+                <li>Augmented reality</li>
+              </ul>
 
-  <!-- colours -->
+            </section>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p class="has-text-primary has-background-light">I'm primary text</p>
-  <p class="has-text-warning has-background-danger">I'm warning text</p>
-  <p class="has-text-danger-light">I'm danger text</p>
-  <p class="has-text-info">I'm info text</p>
-  <p class="has-text-success">I'm success text</p>
-  <p class="has-text-dark">I'm dark text</p>
-  <p class="has-text-light has-background-primary-dark">I'm light text</p>
+
+<!-- EMPTY PUBLICATION ENTRY: -->
+<!--<section class="publication">-->
+<!--  <div class="image">-->
+<!--    <img src="publications/image.png">-->
+<!--  </div>-->
+<!--  <div class="details">-->
+<!--    <h4 class="title is-4">Title</h4>-->
+<!--    <p class="authors">Authors</p>-->
+<!--    <p class="venue">Venue</p>-->
+<!--    <div class="links">-->
+<!--      <p><span class="icon"><i class="ai ai-arxiv"></i></span><a href="arxiv" target="_blank">arXiv</a></p>-->
+<!--      <p><span class="icon"><i class="fab fa-github"></i></span><a href="github" target="_blank">Github</a></p>-->
+<!--      <p><span class="icon"><i class="ai ai-ieee"></i></span><a href="ieee" target="_blank">IEEE proceedings</a></p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 
 </body>
-
 </html>
