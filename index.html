@@ -28,10 +28,13 @@
     }
 
     .publication .image {
-      margin-bottom: 1rem;
-      margin-right: 1rem;
-      border: 1px solid #ccc;
-      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-right: 0.5rem;
+      border: 2px solid #ccc;
+      padding: 0.25rem;
+    }
+
+    .publication .image img {
       width: 350px;
     }
 
@@ -89,7 +92,7 @@
     }
 
     .logo {
-      width: 125px;
+      /*width: 125px;*/
       height: 25px;
       transition: transform 0.3s ease-in-out;
     }
@@ -178,17 +181,19 @@
   </section>
 
   <section class="logo_header">
-    <div class="columns is-vcentered">
-      <div class="logo_colab">
-        <img src="logos/asml.png">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="logo_colab">
+          <img src="logos/asml.png">
+        </div>
+        <div class="logo_colab">
+          <img src="logos/tue.png">
+        </div>
+        <div class="logo_colab">
+          <img src="logos/hri.png">
+        </div>
+        <!-- Add more logos as needed -->
       </div>
-      <div class="logo_colab">
-        <img src="logos/tue.png">
-      </div>
-      <div class="logo_colab">
-        <img src="logos/hri.png">
-      </div>
-      <!-- Add more logos as needed -->
     </div>
   </section>
 
@@ -200,7 +205,7 @@
             <img src="TimSchoonbeek.jpg">
           </figure>
           <h3 class="title is-3">About me</h3>
-          <p>Passionate about computer vision, augmented reality, and motorcycles.</p>
+          <p>Passionate about computer vision, augmented reality, motorcycles, and learning Portuguese.</p>
           <div class="parent">
             <div class="child float-left-child">
               <a href="https://scholar.google.com/citations?user=h_YDH0YAAAAJ" target="_blank">
@@ -217,8 +222,10 @@
         <div class="column">
           <h3 class="title is-3" id="Pubs">Publications</h3>
           <section class="publication">
-            <div class="image">
-              <img src="publications/industreal.png">
+            <div class="column is-one-third">
+              <div class="image">
+                <img src="publications/industreal.png">
+              </div>
             </div>
             <div class="details">
               <h4 class="title is-4">IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting</h4>
@@ -231,8 +238,10 @@
             </div>
           </section>
           <section class="publication">
-            <div class="image">
-              <img src="publications/beyondAR.png">
+            <div class="column is-one-third">
+              <div class="image">
+                <img src="publications/beyondAR.png">
+              </div>
             </div>
             <div class="details">
               <h4 class="title is-4">Beyond Action Recognition: Extracting Meaningful Information from Procedure Recordings</h4>
@@ -244,8 +253,10 @@
             </div>
           </section>
           <section class="publication">
-            <div class="image">
-              <img src="publications/automaticlogging.png">
+            <div class="column is-one-third">
+              <div class="image">
+                <img src="publications/automaticlogging.png">
+              </div>
             </div>
             <div class="details">
               <h4 class="title is-4">Augmented Reality for Automatically Generating Robust Manufacturing and Maintenance Logs</h4>
@@ -257,8 +268,10 @@
             </div>
           </section>
           <section class="publication">
-            <div class="image">
-              <img src="publications/risknet.png">
+            <div class="column is-one-third">
+              <div class="image">
+                <img src="publications/risknet.png">
+              </div>
             </div>
             <div class="details">
               <h4 class="title is-4">Learning to Predict Collision Risk from Simulated Video Data</h4>
@@ -273,12 +286,32 @@
           <h3 class="title is-3" id="Exp">Experiences</h3>
             <section class="experience">
               <h4 class="title is-4">PhD Candidate <br><i>Eindhoven University of Technology</i> and <i>ASML Research</i> </h4>
-
               <ul style="list-style-type:circle">
                 <li>Procedural action understanding</li>
                 <li>Augmented reality</li>
+                <li>Supervision of dr.ir. Peter de With (IEEE Life Fellow), dr. Hans Onvlee (ASML Senior Researcher), dr.ir. Fons van der Sommen, dr. Jacek Kustra</li>
               </ul>
-
+            </section>
+            <section class="experience">
+              <h4 class="title is-4">M.Sc Mechanical Engineering - Automotive Technology <br><i>Eindhoven University of Technology</i></h4>
+              <ul style="list-style-type:circle">
+                <li>Graduated with honors (GPA 4.0)</li>
+                <li>Graduation project <a href="https://ieeexplore.ieee.org/abstract/document/9827228" target="_blank">published</a>, accepted as oral (5% of accepted papers) at IEEE IV 2022</li>
+                <li>Strong focus on computer vision and autonomous vehicles</li>
+              </ul>
+            </section>
+            <section class="experience">
+              <h4 class="title is-4">Graduate internship <br><i>Honda Research Institute Europe</i></h4>
+              <ul style="list-style-type:circle">
+                <li>Subject: Interaction-Aware Trajectory Prediction for Highway Driving using Graphs</li>
+                <li>Real-time trajectory prediction of surrounding vehicles for risk estimation.</li>
+              </ul>
+            </section>
+            <section class="experience">
+              <h4 class="title is-4">B.Sc Electrical Engineering - Automotive Technology <br><i>Eindhoven University of Technology</i></h4>
+              <ul style="list-style-type:circle">
+                <li>Thesis: Depth Estimator from Disparity and Segmented Images (8.5/10)</li>
+              </ul>
             </section>
         </div>
       </div>
