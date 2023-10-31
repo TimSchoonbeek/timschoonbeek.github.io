@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Short Name</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../academicons-1.9.4/css/academicons.css">
+
+    <style>
+
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+            margin-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
+
+		/*.video-container iframe,*/
+		/*.video-container object,*/
+		/*.video-container embed {*/
+		/*	position: absolute;*/
+		/*	top: 0;*/
+		/*	left: 0;*/
+		/*	width: 100%;*/
+		/*	height: 100%;*/
+		/*}*/
+
+        .container {
+            max-width: 800px;
+            margin: 1em auto;
+        }
+
+		.abstract {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			text-align: justify;
+		}
+
+		.links {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			text-align: justify;
+		}
+
+		.links a {
+			margin-bottom: 10px;
+		}
+
+		.bibtex {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			text-align: justify;
+		}
+
+        .link {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .link .icon {
+            margin-right: 10px;
+        }
+        .link .text {
+            font-size: 1.5rem;
+            margin-right: 30px;
+        }
+
+        main {
+            margin-top: 50px; /* Add margin to the top of the main content to prevent it from being covered by the navigation bar */
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section">
+        <div class="container">
+            <section class="title-section">
+                <div class="title">
+                    <h1 class="title is-1">Article Title</h1>
+                    <h2 class="subtitle is-3">Article Authors</h2>
+                    <h3 class="subtitle is-5">Venue</h3>
+                </div>
+            </section>
+            <section class="video-section">
+                <div class="video-container">
+                    <h2 class="title is-4">Video</h2>
+                    <iframe width="1080" height="720" src="https://www.youtube.com/embed/VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="image-section">
+                <div class="image-container">
+                    <h2 class="title is-4">Image</h2>
+                    <img src="path/to/image.png" alt="Description of the image">
+                </div>
+            </section>
+            <section class="abstract-section">
+                <div class="abstract">
+                    <h2 class="title is-4">Abstract</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, magna vel bibendum bibendum, velit sapien bibendum sapien, vel bibendum sapien velit sed sapien. Sed euismod, magna vel bibendum bibendum, velit sapien bibendum sapien, vel bibendum sapien velit sed sapien.</p>
+                </div>
+            </section>
+            <section class="links-section">
+                <div class="links">
+                    <h2 class="title is-4">Links</h2>
+                    <p class="link">
+                        <span class="icon is-large"><i class="ai ai-arxiv fa-2x"></i></span><a
+                            href="https://arxiv.org/" target="_blank" class="text">arXiv</a>
+                        <span class="icon is-large"><i class="fab fa-github fa-2x"></i></span><a
+                            href="https://github.com/TimSchoonbeek/" target="_blank" class="text">Github</a>
+                        <span class="icon is-large"><i class="ai ai-ieee fa-2x"></i></span><a
+                            href="https://ieeexplore.ieee.org/" target="_blank" class="text">IEEE
+                            proceedings</a>
+                        <span class="icon is-large"><i class="ai ai-archive fa-2x"></i></span><a
+                            href="https://google.com" target="_blank" class="text">Publication</a>
+                    </p>
+                </div>
+            </section>
+            <section class="bibtex-section">
+                <div class="bibtex">
+                    <h2 class="title is-4">Bibtex</h2>
+<pre>
+@inproceedings{AUTHOR_LAST_NAME:YEAR,
+title={TITLE},
+author={AUTHOR_FIRST_NAME AUTHOR_LAST_NAME},
+booktitle={PROCEEDINGS},
+year={YEAR}
+}
+</pre>
+                </div>
+            </section>
+        </div>
+    </section>
+
+</body>
+</html>
