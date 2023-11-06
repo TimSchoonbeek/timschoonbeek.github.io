@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric
+        Videos in an Industrial-Like Setting.">
+  <meta name="keywords" content="IndustReal, procedure step recognition, action recognition, industrial,
+  object detection">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IndustReal</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bulma.min.css">
+  <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+<!--  <link rel="stylesheet"-->
+<!--        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">-->
+  <link rel="stylesheet" href="academicons-1.9.4/css/academicons.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./js/fontawesome.all.min.js"></script>
+  <script src="./js/bulma-carousel.min.js"></script>
+  <script src="./js/bulma-slider.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <a class="navbar-item" href="index.html#Pubs">
+        More research
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">IndustReal: A Dataset for Procedure Step Recognition Handling
+            Execution Errors in Egocentric Videos in an Industrial-Like Setting</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="index.html">Tim J. Schoonbeek</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://research.tue.nl/en/persons/tim-houben">Tim Houben</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.researchgate.net/profile/Hans-Onvlee">Hans Onvlee</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.tue.nl/en/research/researchers/peter-de-with">Peter H.N. de With</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.tue.nl/en/research/researchers/fons-van-der-sommen">Fons van der Sommen</a><sup>1</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Eindhoven University of Technology,</span>
+            <span class="author-block"><sup>2</sup>ASML Research</span>
+            <p>Published in: WACV 2024</p>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2310.17323" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2310.17323" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=S-o6MHxvY5c" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/TimSchoonbeek/IndustReal" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://data.4tu.nl/datasets/b008dd74-020d-4ea4-a8ba-7bb60769d224" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./publications/industreal_teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Presenting IndustReal: a multi-modal dataset for procedure understanding in industrial-like settings!
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- Reminders:
+              - you can use paragraph sections to make the abstract much more reader friendly.
+              - use <i></i> to highlight parts of text -->
+          <p>
+            Although action recognition for procedural tasks has received notable attention, it has a fundamental flaw
+            in that no measure of success for actions is provided. This limits the applicability of such systems
+            especially within the industrial domain, since the outcome of procedural actions is often significantly
+            more important than the mere execution. To address this limitation, we define the novel task of procedure
+            step recognition (PSR), focusing on recognizing the correct completion and order of procedural steps.
+            Alongside the new task, we also present the multi-modal IndustReal dataset.
+          </p>
+          <p>
+            Unlike currently available datasets, IndustReal contains procedural errors (such as omissions) as well as
+            execution errors. A significant part of these errors are exclusively present in the validation and test
+            sets, making IndustReal suitable to evaluate robustness of algorithms to new, unseen mistakes.
+            Additionally, to encourage reproducibility and allow for scalable approaches trained on synthetic data, the
+            3D models of all parts are publicly available. Annotations and benchmark performance are provided for
+            action recognition and assembly state detection, as well as the new PSR task.
+            IndustReal, along with the code and model weights, is available on this project page.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/S-o6MHxvY5c?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">  <!-- TODO: fill this entire section with content -->
+  <div class="container is-max-desktop">
+    <!-- Content section 1. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Procedure step recognition</h2>
+          <p>
+            By formalizing the task of  procedure step recognition (PSR), along with an evaluation scheme, we encourage
+            researchers to develop methods to automatically recognize the completion of steps, rather than the (partial)
+            execution of activities. Additionally, PSR systems should explicitly leverage procedural knowledge and
+            allow a flexible execution order for procedural tasks, when the procedure allows it.
+          </p>
+        <br/>
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Task definition</h3>
+        <div class="content has-text-justified">
+          <p>
+            The objective of PSR is to extract an estimate of all procedure steps correctly performed by a person up to
+            time t, based on sensory inputs <i>X</i> and a descriptive set of the procedural actions to be performed
+            <i>P</i>. The predicted completed procedure steps at time <i>t</i> are defined such that
+            $$ {\hat{y}_t = \mathcal{F} (X_t, \mathcal{P}). } $$
+          </p>
+          <p>
+            Crucially, this definition allows for real-time operation, since contrary to existing tasks, PSR does
+            not require a full recording of the procedure as input.
+          </p>
+        </div>
+
+        <br/>
+        <!--/ Paragraph 1. -->
+
+        <!-- Paragraph 2. -->
+        <h3 class="title is-4">Evaluation metrics</h3>
+        <div class="content has-text-justified">
+          <p>
+            <i>Procedure order similarity (POS).</i> We propose to measure the quality of a predicted sequence order
+            for an entire recording by comparing it with a similarity measure with respect to the ground-truth.
+            This is approached as a string similarity problem since words consist of a sequence of characters, where
+            order and type of character matters. We define POS as
+            $$ {\textrm{POS} = 1 - \textrm{min}(\frac{\textrm{DamLev}(y, \hat{y})}{|y|},\hspace{0.1cm}1) ,} $$
+            where DamLev() is a weighted DamLev edit distance function.
+          </p>
+          <p>
+            <i>F1-score.</i>
+          </p>
+          <p>
+            <i>Average delay.</i> To complement the aforementioned metrics with a temporal component, quantifying the
+            time between the ground-truth completion and corresponding recognition of a step.
+          </p>
+        </div>
+        <br/>
+        <!--/ Paragraph 2. -->
+
+      </div>
+    </div>
+    <!--/ Content section 1. -->
+
+    <!-- Content section 2. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">IndustReal dataset</h2>
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Construction-toy car</h3>
+        <div class="content has-text-justified">
+          <p>
+            The IndustReal dataset contains 6 hours of recordings, demonstrating how 27 participants assembly and
+            perform a maintenance task on a construction-toy car. IndustReal uses 3D printed parts and instructions
+            for printing your own model can be found
+            <a href="https://github.com/TimSchoonbeek/IndustReal#3d-printing-your-own-model" target="_blank">here</a>.
+          </p>
+          <div class="content has-text-centered">
+            <img src="./publications/industreal_models.png"
+                 class="interpolation-image"
+                 alt="Overview of the parts and components in IndustReal."/>
+            <p>Overview of the parts and components in IndustReal. </p>
+          </div>
+          <div class="content has-text-justified">
+            <p>We are thankful to the <a href="https://stemfie.org/sps-000001" target="_blank">STEMFIE project</a>
+              for open-sourcing their 3D printed toy construction sets.</p>
+          </div>
+        </div>
+
+        <br/>
+        <!--/ Paragraph 1. -->
+
+        <!-- Paragraph 2. -->
+        <h3 class="title is-4">Novel aspects of the dataset</h3>
+        <div class="content has-text-justified">
+          <p>
+            <i>Variety of execution errors.</i> IndustReal features 38 errors, of which 14 are exclusive to the
+            validation and test sets. Whilst some datasets already include procedural errors (e.g. omissions),
+            IndustReal is the first to also include a variety of execution errors (e.g. wrong type of nut used).
+          </p>
+          <p>
+            <i>Subgoal oriented execution.</i> Other datasets are either “free-style” assemblies or contain a
+            strict, step-by-step execution order. IndustReal combines these execution types with a subgoal-oriented
+            assembly style, where participants are given flexibility to determine the execution order between subgoals.
+            This approach more closely resembles industrial procedures, since it maintains a hierarchy in procedure
+            execution whilst allowing for flexibility where possible. IndustReal contains 48 different execution orders.
+          </p>
+          <p>
+            <i>Open-source geometries.</i> Scalability is an important factor for many industrial tasks, where
+            simultaneously the technical drawings are often available. Therefore, 3D models for all parts are published,
+            to stimulate use of synthetic data in procedural action understanding, e.g. by sim2real domain adaptation
+            or generalization.
+          </p>
+          <p>
+            <i>3D printed parts.</i> To ensure reproducibility, future availability of the model, and growth via
+            community effort, all parts are 3D printed and open source.
+          </p>
+        </div>
+        <br/>
+        <!--/ Paragraph 2. -->
+
+        <!-- Paragraph 3. -->
+        <h3 class="title is-4">Annotations</h3>
+        <div class="content has-text-justified">
+          <p>
+            IndustReal is specifically created to stimulate research on the novel procedure step recognition task.
+            However, to broaden the possible uses of the dataset, we provide action recognition and object detection
+            (assembly state detection) labels alongside the PSR annotations:
+          </p>
+          <div class="content has-text-centered">
+            <img src="./publications/industreal.png"
+                 class="interpolation-image"
+                 alt="Sample from a clip in the IndustReal dataset."/>
+            <p>Samples from a clip in the IndustReal dataset, demonstrating the modalities and annotations for all
+              three tasks. Gaze is indicated by the cross, detected hand joints by the dots. AR: action recognition,
+              ASD: assembly state detection, PSR: procedure step recognition. </p>
+          </div>
+        </div>
+
+        <br/>
+        <!--/ Paragraph 3. -->
+
+      </div>
+    </div>
+    <!--/ Content section 2. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{schoonbeek2024industreal,
+  author    = {Tim J. Schoonbeek and Tim Houben and Hans Onvlee and Peter H. N. de With and Fons van der Sommen},
+  title     = {{IndustReal}: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting},
+  journal   = {{WACV}},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> under the <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
