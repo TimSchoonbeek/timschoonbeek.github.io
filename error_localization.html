@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Find the Assembly Mistakes: Error Segmentation for Industrial Applications.">
+  <meta name="keywords" content="IndustReal, industrial, assembly state recognition, error recognition,
+  error localization, change detection, procedure understanding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Error Segmentation</title>
+  <link rel="icon" href="logos/headset.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bulma.min.css">
+  <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+<!--  <link rel="stylesheet"-->
+<!--        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">-->
+  <link rel="stylesheet" href="academicons-1.9.4/css/academicons.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./js/fontawesome.all.min.js"></script>
+  <script src="./js/bulma-carousel.min.js"></script>
+  <script src="./js/bulma-slider.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <a class="navbar-item" href="index.html#Pubs">
+        More research
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Find the Assembly Mistakes: Error Segmentation for Industrial Applications</h1>
+          <div class="is-size-5 publication-authors">    <!-- TODO: complete this field -->
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/dan-lehman-80b679223/">Dan Lehman</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="index.html">Tim J. Schoonbeek</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/shao-hsuan-hung/">Shao-Hsuan Hung</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/jacekkustra/?originalSubdomain=nl">Jacek Kustra</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.tue.nl/en/research/researchers/peter-de-with">Peter H.N. de With</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.tue.nl/en/research/researchers/fons-van-der-sommen">Fons van der Sommen</a><sup>1</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <p><sup>*</sup>equal contribution (ordered by coin-flip)</p>
+            <span class="author-block"><sup>1</sup>Eindhoven University of Technology,</span>
+            <span class="author-block"><sup>2</sup>ASML Research</span>
+            <p>Published in: ECCV-W 2024</p>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">  <!-- TODO: fill this field -->
+        <source src=""
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <br/>
+        TLDR: Applying Change Detection Algorithms for Industrial Error Segmentation
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- Reminders:
+              - you can use paragraph sections to make the abstract much more reader friendly.
+              - use <i></i> to highlight parts of text -->
+          <p>
+            Recognizing errors in assembly and maintenance procedures is valuable for industrial applications, since it
+          can increase worker efficiency and prevent unplanned down-time. Although assembly state recognition is
+          gaining attention, none of the current works investigate assembly error <i>localization</i>. Therefore, we
+          propose StateDiffNet, which localizes assembly errors based on detecting the differences between a (correct)
+          intended assembly state and a test image from a similar viewpoint. StateDiffNet is trained on synthetically
+          generated image pairs, providing full control over the type of meaningful change that should be detected.
+          </p>
+          <p>
+            The proposed approach is the first to correctly localize assembly errors taken from real ego-centric video
+          data for both states and error types that are never presented during training. Furthermore, the deployment of
+          change detection to this industrial application provides valuable insights and considerations into the
+          mechanisms of state-of-the-art change detection algorithms. The code and data generation pipeline are
+          publicly available.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Content section 1. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3"></h2> <!-- TODO: can put title here -->
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Motivation</h3>
+        <div class="content has-text-justified">
+          <p>
+            Many works perform some type of assembly state detection or assembly quality inspection, which are typically
+            performed as a supervised classification or detection problem. Though these approaches show decent
+            performance at classifying a small number of assembly states, performance on erroneous states is not
+            investigated. A <a href="" target="_blank">representation-learning based approach</a>, <!-- TODO: PUT LINK TO REP LEARNING! -->
+            rather than a classification based approach, is
+            demonstrated to be capable of recognizing unseen assembly errors, a fundamental requirement for a viable
+            system. However, this approach lacks spatial localization of errors, and therefore cannot provide
+            interpretable feedback. Another type of approach relies on anomaly detection, which requires a model to
+            learn the typical structures of nominal data, based on a-priori definitions of nominal data. This is not
+            feasible for industrial procedures, since the possible presence of an error in assembly states depends on
+            the intended state at that moment of the assembly.
+          </p>
+          <p>
+            To overcome the fundamental limitations that arise for error localization in the industrial domain, we
+            propose a methodology that pinpoints the difference between an object in different assembly (including
+            erroneous) states, using segmentation. Our approach is the first error localization system that can locate
+            errors on states that were never encountered during training, and on much more complex assembly
+            configurations than related works. We use more than 10^5 unique state combinations, including states with
+            very small differences, and test on entirely unseen states.
+          </p>
+          <p>
+            Given two images of an assembly object, our model segments all meaningful differences in the state that can
+            be inferred from its view of the object. A core component of the proposed approach is the methodology for
+            generating and sampling synthetic image pairs, which provides full control over the meaningful change that
+            the system should detect, as well as the changes that the system should be invariant to, i.e. the expected
+            variability resulting from aspects such as camera pose, photometry, image distortions, and shadows.
+          </p>
+        </div>
+        <br/>
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Overview of the methodology</h3>
+        <div class="content has-text-justified">
+          <p>
+            The base architecture is based on [1] and modified to perform segmentation, rather than object detection.
+          </p>
+          <div class="content has-text-centered">
+            <img src="publications/error_seg_architecture.png"
+                 class="interpolation-image"
+                 alt="description of what image is showing."/>
+            <p>Proposed change segmentation architecture, modified from [1], consisting of a Siamese encoder,
+              cross-attention based feature-fusion blocks as skip connections in the U-Net-style decoder, and a
+              two-layer convolutional segmentation head.</p>
+          </div>
+          <p>[1] Sachdeva, Ragav, and Andrew Zisserman. "The change you want to see." WACV 2023.</p>
+        </div>
+        <br/>
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Image pair selection</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our approach is trained entirely on synthetic data, generated by modifying the Unity Perception package.
+            The code for this is publicly available via this website. The image pairs are selected as follows:
+          </p>
+          <div class="content has-text-centered">
+            <img src="publications/error_seg_datapipe.png"
+                 class="interpolation-image"
+                 alt="description of what image is showing."/>
+            <p>Overview of the training process. The ground-truth binary change mask of an image pair is created by
+              taking the difference between the instance segmentation masks of the anchor and the sample image viewed
+              from the camera angle of the anchor.</p>
+          </div>
+        </div>
+        <br/>
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Results on real-world data</h3>
+        <div class="content has-text-justified">
+          <p>
+            While the models are trained exclusively on synthetic data, some configurations are able to perform error-
+            segmentation on real-world data:
+          </p>
+          <div class="content has-text-centered">
+            <img src="publications/error_seg_result.png"
+                 class="interpolation-image"
+                 alt="description of what image is showing."/>
+            <p>Real-world qualitative results on different assembly errors. The global cross-attention
+            based model performs best, particularly on missing parts, components, and
+            mis-orientations. No model is able to reliably detect placement errors (last row).</p>
+          </div>
+        </div>
+        <br/>
+        <!--/ Paragraph 1. -->
+
+      </div>
+    </div>
+    <!--/ Content section 1. -->
+  </div>
+
+  <!-- Repeat content sections if required -->
+
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{lehman2024find,
+  title={Find the Assembly Mistakes: Error Segmentation for Industrial Applications},
+  author={Lehman, Dan and Schoonbeek, Tim J and Hung, Shao-Hsuan and Kustra, Jacek and de With, Peter H N and van der Sommen, Fons},
+  booktitle={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> under the <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
