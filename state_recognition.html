@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Supervised Representation Learning towards Generalizable Assembly State Recognition">
+  <meta name="keywords" content="Representation Learning, Computer Vision for Manufacturing, Deep Learning Methods,
+  Assembly State Recognition, Assembly State Detection, IndustReal, procedure understanding.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>State Recognition</title>
+  <link rel="icon" href="logos/headset.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bulma.min.css">
+  <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+<!--  <link rel="stylesheet"-->
+<!--        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">-->
+  <link rel="stylesheet" href="academicons-1.9.4/css/academicons.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./js/fontawesome.all.min.js"></script>
+  <script src="./js/bulma-carousel.min.js"></script>
+  <script src="./js/bulma-slider.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <a class="navbar-item" href="index.html#Pubs">
+        More research
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Supervised Representation Learning towards Generalizable Assembly State Recognition</h1>
+          <div class="is-size-5 publication-authors">    <!-- TODO: complete this field -->
+            <span class="author-block">
+              <a href="index.html" target="_blank">Tim J. Schoonbeek</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/goutham-balachandran/" target="_blank">Goutham Balachandran</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.researchgate.net/profile/Hans-Onvlee" target="_blank">Hans Onvlee</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://research.tue.nl/en/persons/tim-houben" target="_blank">Tim Houben</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/shao-hsuan-hung/" target="_blank">Shao-Hsuan Hung</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/jacekkustra/" target="_blank">Jacek Kustra</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.tue.nl/en/research/researchers/peter-de-with" target="_blank">Peter H.N. de With</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.tue.nl/en/research/researchers/fons-van-der-sommen" target="_blank">Fons van der Sommen</a><sup>1</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Eindhoven University of Technology,</span>
+            <span class="author-block"><sup>2</sup>ASML Research</span>
+            <p>Published in: ArXiv</p>  <!-- TODO: complete this field -->
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="content has-text-centered">
+            <img src="publications/state_reg_teaser.png"
+                 class="interpolation-image"
+                 alt="description of what image is showing."/>
+          </div>
+      <h2 class="subtitle has-text-centered">  <!-- TODO: fill this field -->
+        <br/>
+        TLDR: Using representation learning (rather than classification) for assembly state recognition beats
+        classification approaches and improves generalization
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">  <!-- TODO: fill this field -->
+          <!-- Reminders:
+              - you can use paragraph sections to make the abstract much more reader friendly.
+              - use <i></i> to highlight parts of text -->
+          <p>
+            Assembly state recognition facilitates the execution of assembly procedures, offering feedback to enhance
+            efficiency and minimize errors. However, recognizing assembly states poses challenges in scalability,
+            since parts are frequently updated, and the robustness to execution errors remains underexplored.
+            To address these challenges, this paper proposes an approach based on representation learning and the novel
+            intermediate-state informed loss function modification (ISIL).
+          </p>
+          <p>
+            ISIL leverages unlabeled transitions
+            between states and demonstrates significant improvements in clustering and classification performance
+            for all tested architectures and losses. Despite being trained exclusively on images without execution
+            errors, thorough analysis on error states demonstrates that our approach accurately distinguishes between
+            correct states and states with various types of execution errors. The integration of the proposed algorithm
+            can offer meaningful assistance to workers and mitigate unexpected losses due to procedural mishaps in
+            industrial settings. The code and data are publicly available.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Content section 1. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3"></h2> <!-- TODO: can put title here -->
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Motivation</h3>
+        <div class="content has-text-justified">
+          <p>
+            Existing methods towards assembly state recognition or detection are approaching the problem from a
+            classification perspective, training a neural network to memorize the expected object states.
+            Although this has shown decent performance for procedures with a few expected assembly states, such
+            approaches require the explicit definition of each possible assembly state. Therefore, if any of the object
+            states are modified, e.g. due to an upgraded part or a newly added state, new data must be annotated and
+            the entire network should be re-trained or fine-tuned. A second concern is the under-investigation of the
+            performance of existing approaches on error states, where the approaches remain incapable of reliably
+            detecting erroneous (or correct, but previously undefined) assembly states that are not explicitly defined
+            in training. Requiring explicit definitions of error states is a fundamental issue, since defining all
+            possible errors that can occur during an assembly is infeasible.
+          </p>
+          <p>
+            We propose to use a representation learning framework to address these challenges by learning a function
+            that projects images into a meaningful embedding space.
+            Furthermore, we propose a simple yet effective modification to existing loss functions, named
+            intermediate-state informed loss (ISIL), which uses unlabeled part configurations in the training data as
+            negative samples without enforcing their image embeddings towards a single cluster.
+          </p>
+          <p>
+            The improvements obtained by using ISIL on clustering performance range from 5% to 22%, across various
+            network architectures and contrastive loss functions, whilst also improving classification performance on
+            all experiments. We also demonstrate that representation learning-based approaches recognize real-world
+            assembly errors from practical cases better than classification-based approaches, without being trained on
+            any data containing error states. The code and annotations created to perform the study on these error
+            states are published to stimulate research on this topic. Our contributions are:
+          </p>
+          <ul>
+            <li><i>Representation learning approach</i> to assembly state recognition that outperforms classification
+              approaches and performs well even on unseen part configurations;</li>
+            <li><i>Intermediate-state informed loss function modification</i> ISIL, which effectively leverages unlabeled data
+              between completed assembly steps to improve both clustering and classification performance;</li>
+            <li><i>Extensive study on erroneous assembly states</i> for the representation learning framework, compared to
+              classification, including new annotations for intended states in the IndustReal dataset.</li>
+          </ul>
+        </div>
+        <br/>
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Intuition behind proposed ISIL modification</h3>
+        <div class="content has-text-justified">
+          <div class="content has-text-centered">
+            <img src="publications/state_reg_illustration.png"
+                 class="interpolation-image"
+                 alt="description of what image is showing."/>
+            <p style="text-align: justify;">Illustration of influence of the proposed loss function that leverages images containing intermediate
+              assembly states, i.e. non-defined, transitional states between pre-defined states. In (a), the
+              intermediate states (gray) are ignored during training, not leveraging any information that these images
+              might have. In (b), the intermediate states are grouped into a single cluster, hindering the model's
+              capacity to capture a meaningful embedding since these states are frequently not correlated. We propose
+              (c), an intuitive modification to loss functions that leverages intermediate states exclusively as
+              negative samples. Dissimilar embeddings of (potentially) uncorrelated states are only penalized if they
+              are similar to any foreground (pre-defined) class.</p>
+          </div>
+        </div>
+        <br/>
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Overview of ISIL applied to the supervised contrastive (SupCon) loss</h3>
+        <div class="content has-text-justified">
+          <div class="content has-text-centered">
+            <img src="publications/state_reg_method.png"
+                 class="interpolation-image"
+                 alt="description of what image is showing."/>
+            <p style="text-align: justify;">Overview of the contrastive learning framework (with the proposed ISIL
+              modification). Each mini-batch consists of real-world and synthetic images of pre-defined assembly states
+              and real-world intermediate states. The images are passed through an encoder \({f(\cdot)}\), followed by a
+              three-layer MLP projection head \({g(\cdot)}\). The resulting embeddings \({z_i}\) are used to calculate the
+              contrastive loss. During inference, only the first layer of \({g(\cdot)}\) is used.</p>
+          </div>
+        </div>
+        <br/>
+        <!--/ Paragraph 1. -->
+
+        <!-- Paragraph 2. -->
+        <h3 class="title is-4">Error categories within IndustReal dataset</h3>
+        <div class="content has-text-justified">
+          <div class="content has-text-centered">
+            <p style="text-align: justify;">
+              In order to evaluate the performance of our proposed framework on erroneous assembly states,
+              two human annotators have labeled the user-intended state and error category for every image in IndustReal
+              containing execution errors. The user-intended state is annotated based on the work instructions for each
+              video, and the error category based on four error categories: missing component (I.),
+              incorrect orientation (II.), incorrect placement (III.), and part-level errors (IV.). A description of
+              the error categories and their occurrences in the IndustReal dataset are given below:
+            </p>
+            <img src="publications/state_reg_errors.png"
+                 class="interpolation-image"
+                 alt="description of what image is showing."/>
+            <p style="text-align: justify;">Categorization of errors including visual examples and the number of frames
+              in IndustReal for each category. Based on whether an error is at component or part level, they are
+              classified into four different categories.</p>
+            <p style="text-align: justify;">
+              These annotations are made public to stimulate research on this topic. In our paper, we perform an
+              experiment on these error categories and demonstrate how the approaches based on representation learning
+              outperform classification-based approached, especially when the ISIL modification is applied.
+            </p>
+          </div>
+        </div>
+        <br/>
+        <!--/ Paragraph 2. -->
+
+      </div>
+    </div>
+    <!--/ Content section 1. -->
+  </div>
+
+  <!-- Repeat content sections if required -->
+
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{schoonbeek2024supervised,
+  title={Supervised Representation Learning towards Generalizable Assembly State Recognition},
+  author={Schoonbeek, Tim J and Balachandran, Goutham and Onvlee, Hans and Houben, Tim and others},
+  booktitle={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> under the <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
