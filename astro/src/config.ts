@@ -14,12 +14,58 @@ export const siteConfig = {
   skills: ["Computer Vision", "Machine Learning", "AI for Manufacturing", "Augmented Reality", "Human-Computer Interaction", "Video Understanding", "Semi-Supervised Learning", "Domain Adaptation", "Imbalanced Classification", "Foundation Models"],
   publications: [
     {
-      title: "Sample Publication Title",
-      authors: "Tim J. Schoonbeek, Author 2, Author 3",
-      venue: "Conference/Journal Name 2024",
-      description: "Brief description of the publication and its contributions to the field.",
-      link: "https://example.com/paper",
-      tags: ["Computer Vision", "Machine Learning"],
+      title: "Supervised Representation Learning towards Generalizable Assembly State Recognition",
+      authors: "Tim J. Schoonbeek, Goutham Balachandran, Hans Onvlee, Tim Houben, Shao-Hsuan Hung, Jacek Kustra, Peter H.N. de With, Fons van der Sommen",
+      venue: "IEEE Robotics and Automation Letters (RA-L)",
+      description: "We propose a supervised representation learning approach for generalizable assembly state recognition in manufacturing environments. Our method learns robust features that can generalize across different assembly scenarios and conditions.",
+      link: "/state_rec.html",
+      tags: ["Computer Vision", "Representation Learning", "Assembly Recognition"],
+      image: "/publications/state_reg_teaser.png"
+    },
+    {
+      title: "Find the Assembly Mistakes: Error Segmentation for Industrial Applications",
+      authors: "Dan Lehman*, Tim J. Schoonbeek*, Shao-Hsuan Hung, Jacek Kustra, Peter H.N. de With, Fons van der Sommen (*equal contribution)",
+      venue: "ECCV 2024 (Vision-based InduStrial InspectiON)",
+      description: "We present a novel approach for automatically detecting and segmenting assembly errors in industrial settings. Our method can identify various types of mistakes during manufacturing processes, improving quality control.",
+      link: "/error_seg.html",
+      tags: ["Error Detection", "Segmentation", "Industrial AI"],
+      image: "/publications/error_seg_architecture.png"
+    },
+    {
+      title: "IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting",
+      authors: "Tim J. Schoonbeek, Tim Houben, Hans Onvlee, Peter H.N. de With, Fons van der Sommen",
+      venue: "WACV 2024",
+      description: "We introduce IndustReal, a comprehensive dataset for procedure step recognition in egocentric videos, specifically designed to handle execution errors in industrial-like settings. The dataset enables research on robust procedural understanding.",
+      link: "/industreal.html",
+      tags: ["Dataset", "Egocentric Vision", "Procedure Recognition"],
+      image: "/publications/industreal.png"
+    },
+    {
+      title: "Beyond Action Recognition: Extracting Meaningful Information from Procedure Recordings",
+      authors: "Tim J. Schoonbeek, Hans Onvlee, Pierluigi Frisco, Peter H.N. de With, Fons van der Sommen",
+      venue: "IEEE VR 2023 (short paper)",
+      description: "We explore methods to extract meaningful procedural information beyond simple action recognition from video recordings. Our approach provides richer understanding of complex manufacturing and maintenance procedures.",
+      link: "/beyondAR.html",
+      tags: ["Procedure Analysis", "Video Understanding", "Augmented Reality"],
+      image: "/publications/beyondAR.png"
+    },
+    {
+      title: "Augmented Reality for Automatically Generating Robust Manufacturing and Maintenance Logs",
+      authors: "Tim J. Schoonbeek, Pierluigi Frisco, Hans Onvlee, Peter H.N. de With, Fons van der Sommen",
+      venue: "London Imaging Meeting 2022 (oral presentation)",
+      description: "We present an augmented reality system that automatically generates standardized logs for manufacturing and maintenance procedures. The system reduces manual logging overhead while improving consistency and searchability.",
+      link: "/automaticlogging.html",
+      tags: ["Augmented Reality", "Automatic Logging", "Manufacturing"],
+      image: "/publications/automaticlogging.png"
+    },
+    {
+      title: "Learning to Predict Collision Risk from Simulated Video Data",
+      authors: "Tim J. Schoonbeek, Fabrizio J. Piva, Hamid R. Abdolhay, Gijs Dubbelman",
+      venue: "IEEE IV 2022 (single track oral presentation)",
+      description: "We develop a machine learning approach to predict collision risk from simulated video data. Our method demonstrates effective sim-to-real transfer for autonomous driving safety applications.",
+      link: "/risknet.html",
+      tags: ["Collision Prediction", "Autonomous Driving", "Sim-to-Real"],
+      image: "/publications/risknet.png"
     },
   ],
   experience: [
