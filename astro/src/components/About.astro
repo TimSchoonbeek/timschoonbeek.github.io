@@ -16,9 +16,33 @@ import { siteConfig } from "../config";
           style={`background-color: ${siteConfig.accentColor}`}
         >
         </div>
+        
+        <!-- Photo positioned under "About Me" heading on desktop -->
+        <div class="hidden lg:block mt-8">
+          <div class="relative">
+            <img 
+              src="/TimSchoonbeek.jpg" 
+              alt="Tim J. Schoonbeek" 
+              class="w-64 h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            />
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent"></div>
+          </div>
+        </div>
       </div>
 
       <div class="lg:col-span-8 space-y-8">
+        <!-- Photo positioned under text on mobile -->
+        <div class="lg:hidden flex justify-center">
+          <div class="relative">
+            <img 
+              src="/TimSchoonbeek.jpg" 
+              alt="Tim J. Schoonbeek" 
+              class="w-48 h-48 sm:w-56 sm:h-56 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            />
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent"></div>
+          </div>
+        </div>
+
         <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
           {siteConfig.aboutMe}
         </p>
