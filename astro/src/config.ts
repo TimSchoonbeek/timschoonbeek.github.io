@@ -10,44 +10,21 @@ export const siteConfig = {
     scholar: "https://scholar.google.com/citations?user=h_YDH0YAAAAJ",
   },
   aboutMe:
-    "Passionate about (egocentric) procedure understanding, computer vision, augmented reality, motorcycles, and learning Portuguese.",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
-  projects: [
+    "I'm Tim Schoonbeek, a PhD candidate at ASML and Eindhoven University of Technology (graduating Nov 2025), where I develop multimodal AI for computer vision and augmented reality in industrial settings. My work spans scalable video understanding, defect detection, and human–AI collaboration, with multiple patents and publications and experience at industrial research divisions (Microsoft, ASML, Honda). I’m passionate about turning cutting-edge research into real-world impact. Outside the lab, I’m usually on (or tinkering with) a motorcycle, or learning Portuguese.",
+  skills: ["Computer Vision", "Machine Learning", "AI for Manufacturing", "Augmented Reality", "Human-Computer Interaction", "Video Understanding", "Semi-Supervised Learning", "Domain Adaptation", "Imbalanced Classification", "Foundation Models"],
+  publications: [
     {
-      name: "AI Dev Roundup Newsletter",
-      description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
-    {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
-      description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
-    {
-      name: "ExtensionKit",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      title: "Sample Publication Title",
+      authors: "Tim J. Schoonbeek, Author 2, Author 3",
+      venue: "Conference/Journal Name 2024",
+      description: "Brief description of the publication and its contributions to the field.",
+      link: "https://example.com/paper",
+      tags: ["Computer Vision", "Machine Learning"],
     },
   ],
   experience: [
     {
-      company: "Microsoft Research Redmond",
-      title: "Research Intern",
-      dateRange: "June 2025 - Sept. 2025",
-      bullets: [
-        "Research group: Interactive Multimodal AI Systems",
-        "Developing real-time multimodal systems with LLM-powered perception to create benchmarks for situated intelligence for task assistance",
-        "Building models of social cues (turn-taking, engagement, attention) from large datasets while collaborating with cross-disciplinary teams",
-      ],
-    },
-    {
-      company: "ASML Research",
+      company: "ASML Research, Eindhoven",
       title: "Visiting Researcher",
       dateRange: "Sept. 2021 - Nov. 2025",
       bullets: [
@@ -57,7 +34,17 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Honda Research Institute Europe GmbH",
+      company: "Microsoft Research, Redmond",
+      title: "Research Intern",
+      dateRange: "June 2025 - Sept. 2025",
+      bullets: [
+        "Research group: Interactive Multimodal AI Systems",
+        "Developing real-time multimodal systems with LLM-powered perception to create benchmarks for situated intelligence for task assistance",
+        "Building models of social cues (turn-taking, engagement, attention) from large datasets while collaborating with cross-disciplinary teams",
+      ],
+    },
+    {
+      company: "Honda Research Institute Europe GmbH, Frankfurt",
       title: "Internship",
       dateRange: "Mar. 2020 - July 2020",
       bullets: [
@@ -66,8 +53,8 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Automotive Technology InMotion (Student Team)",
-      title: "Race Engineer - Part-time",
+      company: "Automotive Technology InMotion, Helmond",
+      title: "Race Engineer - Part-time (Student Team)",
       dateRange: "Sept. 2018 - Sept. 2019",
       bullets: [
         "Performed and optimized drive cycle simulations for an electric endurance racing car",
@@ -76,7 +63,7 @@ export const siteConfig = {
   ],
   education: [
     {
-      school: "University of Cambridge",
+      school: "University of Cambridge, Cambridge",
       degree: "Visiting Researcher",
       dateRange: "Oct. 2024 - April 2025",
       achievements: [
@@ -86,7 +73,7 @@ export const siteConfig = {
       ],
     },
     {
-      school: "Eindhoven University of Technology",
+      school: "Eindhoven University of Technology, Eindhoven",
       degree: "PhD",
       dateRange: "Sept. 2021 - Nov. 2025",
       achievements: [
@@ -106,7 +93,7 @@ export const siteConfig = {
       ],
     },
     {
-      school: "Eindhoven University of Technology",
+      school: "Eindhoven University of Technology, Eindhoven",
       degree: "M.Sc. in Automotive Engineering",
       dateRange: "Feb. 2019 - May 2021",
       achievements: [
@@ -117,7 +104,7 @@ export const siteConfig = {
       ],
     },
     {
-      school: "Eindhoven University of Technology",
+      school: "Eindhoven University of Technology, Eindhoven",
       degree: "B.Sc. in Electrical Engineering",
       dateRange: "Sept. 2015 - Feb. 2019",
       achievements: [
