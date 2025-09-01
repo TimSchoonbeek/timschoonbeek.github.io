@@ -7,6 +7,7 @@ export const siteConfig = {
     email: "t.j.schoonbeek@gmail.com",
     linkedin: "https://www.linkedin.com/in/timschoonbeek",
     github: "https://github.com/TimSchoonbeek",
+    scholar: "https://scholar.google.com/citations?user=h_YDH0YAAAAJ",
   },
   aboutMe:
     "Passionate about (egocentric) procedure understanding, computer vision, augmented reality, motorcycles, and learning Portuguese.",

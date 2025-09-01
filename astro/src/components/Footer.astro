@@ -71,6 +71,31 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             >
           </a>
           <a
+            href={siteConfig.social.scholar}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Google Scholar"
+            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
+            style={`--accent-color: ${siteConfig.accentColor}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M5.242 13.769L0.5 9.5 12 1l11.5 8.5-4.742 4.269C17.548 14.408 14.69 16.5 12 16.5s-5.548-2.092-6.758-2.731z"></path>
+              <path d="M12 10a7 7 0 0 0-7 7h14a7 7 0 0 0-7-7z"></path>
+            </svg>
+          </a>
+          <a
             href={siteConfig.social.github}
             target="_blank"
             rel="noopener noreferrer"
