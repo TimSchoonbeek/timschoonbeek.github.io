@@ -15,8 +15,8 @@ export const siteConfig = {
   publications: [
     {
       title: "Supervised Representation Learning towards Generalizable Assembly State Recognition",
-      authors: "Tim J. Schoonbeek, Goutham Balachandran, Hans Onvlee, Tim Houben, Shao-Hsuan Hung, Jacek Kustra, Peter H.N. de With, Fons van der Sommen",
-      venue: "IEEE Robotics and Automation Letters (RA-L)",
+      authors: "<strong>Tim J. Schoonbeek</strong>, Goutham Balachandran, Hans Onvlee, Tim Houben, Shao-Hsuan Hung, Jacek Kustra, Peter H.N. de With, Fons van der Sommen",
+      venue: "IEEE Robotics and Automation Letters (RA-L) and ICRA 2025",
       description: "We propose a supervised representation learning approach for generalizable assembly state recognition in manufacturing environments. Our method learns robust features that can generalize across different assembly scenarios and conditions.",
       link: "/state_rec.html",
       tags: ["Computer Vision", "Representation Learning", "Assembly Recognition"],
@@ -24,7 +24,7 @@ export const siteConfig = {
     },
     {
       title: "Find the Assembly Mistakes: Error Segmentation for Industrial Applications",
-      authors: "Dan Lehman*, Tim J. Schoonbeek*, Shao-Hsuan Hung, Jacek Kustra, Peter H.N. de With, Fons van der Sommen (*equal contribution)",
+      authors: "Dan Lehman*, <strong>Tim J. Schoonbeek</strong>*, Shao-Hsuan Hung, Jacek Kustra, Peter H.N. de With, Fons van der Sommen (*equal contribution)",
       venue: "ECCV 2024 (Vision-based InduStrial InspectiON)",
       description: "We present a novel approach for automatically detecting and segmenting assembly errors in industrial settings. Our method can identify various types of mistakes during manufacturing processes, improving quality control.",
       link: "/error_seg.html",
@@ -33,16 +33,16 @@ export const siteConfig = {
     },
     {
       title: "IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting",
-      authors: "Tim J. Schoonbeek, Tim Houben, Hans Onvlee, Peter H.N. de With, Fons van der Sommen",
+      authors: "<strong>Tim J. Schoonbeek</strong>, Tim Houben, Hans Onvlee, Peter H.N. de With, Fons van der Sommen",
       venue: "WACV 2024",
-      description: "We introduce IndustReal, a comprehensive dataset for procedure step recognition in egocentric videos, specifically designed to handle execution errors in industrial-like settings. The dataset enables research on robust procedural understanding.",
+      description: "We introduce IndustReal, a comprehensive dataset for procedure step recognition in egocentric videos. We also present the new Procedure Step Recognition (PSR) task and evaluation metrics.",
       link: "/industreal.html",
       tags: ["Dataset", "Egocentric Vision", "Procedure Recognition"],
       image: "/publications/industreal.png"
     },
     {
       title: "Beyond Action Recognition: Extracting Meaningful Information from Procedure Recordings",
-      authors: "Tim J. Schoonbeek, Hans Onvlee, Pierluigi Frisco, Peter H.N. de With, Fons van der Sommen",
+      authors: "<strong>Tim J. Schoonbeek</strong>, Hans Onvlee, Pierluigi Frisco, Peter H.N. de With, Fons van der Sommen",
       venue: "IEEE VR 2023 (short paper)",
       description: "We explore methods to extract meaningful procedural information beyond simple action recognition from video recordings. Our approach provides richer understanding of complex manufacturing and maintenance procedures.",
       link: "/beyondAR.html",
@@ -51,16 +51,16 @@ export const siteConfig = {
     },
     {
       title: "Augmented Reality for Automatically Generating Robust Manufacturing and Maintenance Logs",
-      authors: "Tim J. Schoonbeek, Pierluigi Frisco, Hans Onvlee, Peter H.N. de With, Fons van der Sommen",
+      authors: "<strong>Tim J. Schoonbeek</strong>, Pierluigi Frisco, Hans Onvlee, Peter H.N. de With, Fons van der Sommen",
       venue: "London Imaging Meeting 2022 (oral presentation)",
-      description: "We present an augmented reality system that automatically generates standardized logs for manufacturing and maintenance procedures. The system reduces manual logging overhead while improving consistency and searchability.",
+      description: "We present a proof-of-concept augmented reality system that automatically generates standardized logs for manufacturing and maintenance procedures. The system reduces manual logging overhead while improving consistency and searchability.",
       link: "/automaticlogging.html",
       tags: ["Augmented Reality", "Automatic Logging", "Manufacturing"],
       image: "/publications/automaticlogging.png"
     },
     {
       title: "Learning to Predict Collision Risk from Simulated Video Data",
-      authors: "Tim J. Schoonbeek, Fabrizio J. Piva, Hamid R. Abdolhay, Gijs Dubbelman",
+      authors: "<strong>Tim J. Schoonbeek</strong>, Fabrizio J. Piva, Hamid R. Abdolhay, Gijs Dubbelman",
       venue: "IEEE IV 2022 (single track oral presentation)",
       description: "We develop a machine learning approach to predict collision risk from simulated video data. Our method demonstrates effective sim-to-real transfer for autonomous driving safety applications.",
       link: "/risknet.html",
@@ -73,6 +73,7 @@ export const siteConfig = {
       company: "ASML Research, Eindhoven",
       title: "Visiting Researcher",
       dateRange: "Sept. 2021 - Nov. 2025",
+      logo: "/logos/asml_square.png",
       bullets: [
         "PhD project on automatic extraction of relevant and meaningful information from procedural actions within an industrial setting",
         "Filed patents, published peer-reviewed articles, and contributed to the ASML Technology Conference, the world's largest developer event",
@@ -83,6 +84,7 @@ export const siteConfig = {
       company: "Microsoft Research, Redmond",
       title: "Research Intern",
       dateRange: "June 2025 - Sept. 2025",
+      logo: "/logos/microsoft_square.png",
       bullets: [
         "Research group: Interactive Multimodal AI Systems",
         "Developing real-time multimodal systems with LLM-powered perception to create benchmarks for situated intelligence for task assistance",
@@ -93,6 +95,7 @@ export const siteConfig = {
       company: "Honda Research Institute Europe GmbH, Frankfurt",
       title: "Internship",
       dateRange: "Mar. 2020 - July 2020",
+      logo: "/logos/hri_square.png",
       bullets: [
         "Interaction-Aware Trajectory Prediction Using Graph Neural Networks",
         "Researched spatio-temporal graph neural networks for trajectory prediction of surrounding vehicles in highway driving scenarios",
@@ -102,6 +105,7 @@ export const siteConfig = {
       company: "Automotive Technology InMotion, Helmond",
       title: "Race Engineer - Part-time (Student Team)",
       dateRange: "Sept. 2018 - Sept. 2019",
+      logo: "/logos/inmotion_square.png",
       bullets: [
         "Performed and optimized drive cycle simulations for an electric endurance racing car",
       ],
@@ -112,6 +116,7 @@ export const siteConfig = {
       school: "University of Cambridge, Cambridge",
       degree: "Visiting Researcher",
       dateRange: "Oct. 2024 - April 2025",
+      logo: "/logos/cambridge_square.png",
       achievements: [
         "Conducted research on enhancing human-robot interaction, focusing on AI systems to assist industrial operators in procedure execution",
         "Designed computer vision algorithms for quality inspection and AR support systems; conducted user studies with AR glasses",
@@ -122,6 +127,7 @@ export const siteConfig = {
       school: "Eindhoven University of Technology, Eindhoven",
       degree: "PhD",
       dateRange: "Sept. 2021 - Nov. 2025",
+      logo: "/logos/tue_square.png",
       achievements: [
         "Title: Advanced Augmented Reality Solutions for AI-based Servitization",
         "Electrical Engineering Faculty",
@@ -132,6 +138,7 @@ export const siteConfig = {
       school: "International Summer School, Matera",
       degree: "Extended Reality and Artificial Intelligence",
       dateRange: "July 2023",
+      logo: "/logos/tue_square.png",
       achievements: [
         "Completed courses on the intersection of AI & extended reality (XR) from Prof. Rita Cucchiara and Prof. Joaquim Jorge, amongst others",
         "Pro-actively took up the role as a link between the programmers and designers in a multidisciplinary project, besides my technical roles",
@@ -142,6 +149,7 @@ export const siteConfig = {
       school: "Eindhoven University of Technology, Eindhoven",
       degree: "M.Sc. in Automotive Engineering",
       dateRange: "Feb. 2019 - May 2021",
+      logo: "/logos/tue_square.png",
       achievements: [
         "Specialization: Mobile Perception Systems",
         "Earned the cum laude honours distinction for a 4.0 GPA (8.5/10)",
@@ -153,6 +161,7 @@ export const siteConfig = {
       school: "Eindhoven University of Technology, Eindhoven",
       degree: "B.Sc. in Electrical Engineering",
       dateRange: "Sept. 2015 - Feb. 2019",
+      logo: "/logos/tue_square.png",
       achievements: [
         "Automotive Track",
         "Bachelor thesis on depth estimation from disparity and segmented images awarded a 8.5/10",
