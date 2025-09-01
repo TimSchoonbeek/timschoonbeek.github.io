@@ -113,17 +113,6 @@ export const siteConfig = {
   ],
   education: [
     {
-      school: "University of Cambridge, Cambridge",
-      degree: "Visiting Researcher",
-      dateRange: "Oct. 2024 - April 2025",
-      logo: "/logos/cambridge_square.png",
-      achievements: [
-        "Conducted research on enhancing human-robot interaction, focusing on AI systems to assist industrial operators in procedure execution",
-        "Designed computer vision algorithms for quality inspection and AR support systems; conducted user studies with AR glasses",
-        "Reached the finals (top 2.5%) in the OxBridge AI Startup Challenge, a competition between students from Cambridge and Oxford",
-      ],
-    },
-    {
       school: "Eindhoven University of Technology, Eindhoven",
       degree: "PhD",
       dateRange: "Sept. 2021 - Nov. 2025",
@@ -132,6 +121,17 @@ export const siteConfig = {
         "Title: Advanced Augmented Reality Solutions for AI-based Servitization",
         "Electrical Engineering Faculty",
         "Doctoral project funded by ASML on industrial procedure understanding using computer vision and machine learning algorithms",
+      ],
+    },
+    {
+      school: "University of Cambridge, Cambridge",
+      degree: "Visiting Researcher",
+      dateRange: "Oct. 2024 - April 2025",
+      logo: "/logos/cambridge_square.png",
+      achievements: [
+        "Conducted research on enhancing human-robot interaction, focusing on AI systems to assist industrial operators in procedure execution",
+        "Designed computer vision algorithms for quality inspection and AR support systems; conducted user studies with AR glasses",
+        "Reached the finals (top 2.5%) in the OxBridge AI Startup Challenge, a competition between students from Cambridge and Oxford",
       ],
     },
     {
