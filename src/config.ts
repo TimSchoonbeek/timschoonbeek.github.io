@@ -10,7 +10,7 @@ export const siteConfig = {
     scholar: "https://scholar.google.com/citations?user=h_YDH0YAAAAJ",
   },
   aboutMe:
-    "I'm Tim Schoonbeek, a PhD candidate at ASML and Eindhoven University of Technology (graduating Nov 2025), where I develop multimodal AI for computer vision and augmented reality in industrial settings. My work spans scalable video understanding, defect detection, and human–AI collaboration, with multiple patents and publications and experience at industrial research divisions (Microsoft, ASML, Honda). I’m passionate about turning cutting-edge research into real-world impact. Outside the lab, I’m usually on (or tinkering with) a motorcycle, or learning Portuguese.",
+    "I am Tim Schoonbeek, a PhD candidate at ASML and Eindhoven University of Technology (graduating Nov 2025), where I develop multimodal AI for computer vision and augmented reality in industrial settings. My work spans scalable video understanding, defect detection, and human–AI collaboration, with multiple patents and publications and experience at industrial research divisions (Microsoft, ASML, Honda). I am passionate about turning cutting-edge research into real-world impact. Outside the lab, I am usually on (or tinkering with) a motorcycle, or learning Portuguese.",
   skills: ["Computer Vision", "Machine Learning", "AI for Manufacturing", "Augmented Reality", "Human-Computer Interaction", "Video Understanding", "Semi-Supervised Learning", "Domain Adaptation", "Imbalanced Classification", "Foundation Models"],
   publications: [
     {
