@@ -10,9 +10,9 @@ export const siteConfig = {
     scholar: "https://scholar.google.com/citations?user=h_YDH0YAAAAJ",
   },
   aboutMeWork:
-    "I am Tim Schoonbeek, a PhD candidate at ASML and Eindhoven University of Technology (graduating Nov 2025), where I develop multimodal AI for computer vision and augmented reality in industrial settings. My work spans scalable video understanding, defect detection, and human–AI collaboration, with multiple patents and publications and experience at industrial research divisions (Microsoft, ASML, Honda).",
+    "I am Tim, a PhD student at ASML and TU/e graduating in Nov 2025. During my PhD, I develop multimodal AI for computer vision and augmented reality in industrial settings. My work spans scalable video understanding, defect detection, and human–AI collaboration. I combine industrial research experience at Microsoft, ASML, and Honda with a strong publication record and patents, translating cutting-edge AI into practical solutions.",
   aboutMePersonal:
-    "I am passionate about turning cutting-edge research into real-world impact. Outside the lab, I am usually on (or tinkering with) a motorcycle, or learning Portuguese.",
+    "Outside the lab, I am usually on (or tinkering with) a motorcycle, traveling, or learning Portuguese.",
   skills: ["Computer Vision", "Machine Learning", "AI for Manufacturing", "Augmented Reality", "Human-Computer Interaction", "Video Understanding", "Semi-Supervised Learning", "Domain Adaptation", "Imbalanced Classification", "Foundation Models"],
   publications: [
     {
@@ -140,7 +140,7 @@ export const siteConfig = {
       school: "International Summer School, Matera",
       degree: "Extended Reality and Artificial Intelligence",
       dateRange: "July 2023",
-      logo: "/logos/tue_square.png",
+      logo: "/logos/aixr_square.png",
       achievements: [
         "Completed courses on the intersection of AI & extended reality (XR) from Prof. Rita Cucchiara and Prof. Joaquim Jorge, amongst others",
         "Pro-actively took up the role as a link between the programmers and designers in a multidisciplinary project, besides my technical roles",
