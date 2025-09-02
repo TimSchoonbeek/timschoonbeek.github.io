@@ -70,6 +70,22 @@ export const siteConfig = {
       image: "/publications/risknet.png"
     },
   ],
+  patents: [
+    {
+      title: "Robust Defect Identification and Segmentation with no need for labeled data",
+      authors: "Tiago Botari, <strong>Tim J. Schoonbeek</strong>, Dan Lehman, Alexandru Onose and Jan Jitse Venselaar",
+      venue: "EP Patent Filing 24223558.8. 2024",
+      description: "Patent filed for robust defect identification and segmentation techniques that do not require labeled training data, enabling more scalable and cost-effective quality control in manufacturing.",
+      tags: ["Defect Detection", "Semi-Supervised Learning", "Industrial AI"]
+    },
+    {
+      title: "Contrastive deep learning for SEM defect inspection",
+      authors: "Daniel Faatz, Tiago Botari and <strong>Tim J. Schoonbeek</strong>",
+      venue: "EP Patent Filing 23211337.3 and WO Patent Filing PCT/EP2024/080483. 2023",
+      description: "Patent filed for contrastive deep learning approaches applied to scanning electron microscopy (SEM) defect inspection, improving accuracy and efficiency in semiconductor manufacturing quality control.",
+      tags: ["SEM Inspection", "Contrastive Learning", "Semiconductor Manufacturing"]
+    }
+  ],
   experience: [
     {
       company: "ASML Research, Eindhoven",

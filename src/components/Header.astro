@@ -2,6 +2,7 @@
 import { siteConfig } from "../config";
 
 const hasPublications = siteConfig.publications && siteConfig.publications.length > 0;
+const hasPatents = siteConfig.patents && siteConfig.patents.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 ---
@@ -52,6 +53,18 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Publications
+            </a>
+          </li>
+        )
+      }
+      {
+        hasPatents && (
+          <li>
+            <a
+              href="#patents"
+              class="text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              Patents
             </a>
           </li>
         )
