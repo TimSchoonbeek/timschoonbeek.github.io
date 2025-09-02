@@ -71,7 +71,7 @@ export const siteConfig = {
   experience: [
     {
       company: "ASML Research, Eindhoven",
-      title: "Visiting Researcher",
+      title: "PhD Researcher",
       dateRange: "Sept. 2021 - Nov. 2025",
       logo: "/logos/asml_square.png",
       bullets: [
