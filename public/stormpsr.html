@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling.">
+  <meta name="keywords" content="Keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STORM-PSR</title>
+  <link rel="icon" href="logos/headset.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bulma.min.css">
+  <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+<!--  <link rel="stylesheet"-->
+<!--        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">-->
+  <link rel="stylesheet" href="academicons-1.9.4/css/academicons.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./js/fontawesome.all.min.js"></script>
+  <script src="./js/bulma-carousel.min.js"></script>
+  <script src="./js/bulma-slider.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <a class="navbar-item" href="index.html#Pubs">
+        More research
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="index.html" target="_blank">Tim J. Schoonbeek</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/shao-hsuan-hung/" target="_blank">Shao-Hsuan Hung</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/dan-lehman01" target="_blank">Dan Lehman</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.researchgate.net/profile/Hans-Onvlee" target="_blank">Hans Onvlee</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/jacekkustra/?originalSubdomain=nl" target="_blank">Jacek Kustra</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.tue.nl/en/research/researchers/peter-de-with" target="_blank">Peter H.N. de With</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.tue.nl/en/research/researchers/fons-van-der-sommen" target="_blank">Fons van der Sommen</a><sup>1</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <p><sup>*</sup>equal contribution</p>
+            <span class="author-block"><sup>1</sup>Eindhoven University of Technology,</span>
+            <span class="author-block"><sup>2</sup>ASML Research</span>
+            <p>Published in: Computer Vision & Image Understanding</p>  <!-- TODO: complete this field -->
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">  <!-- TODO: fill this field -->
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="content has-text-centered">
+            <img src="publications/stormpsr_teaser.png"
+                 class="interpolation-image"
+                 alt="description of what image is showing."/>
+          </div>
+      <h2 class="subtitle has-text-centered">
+        <br/>
+        TLDR: STORM-PSR pairs a transformer-based spatio-temporal stream with assembly state cues and weakly supervised pretraining to recognize correctly completed steps even under partial occlusion.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">  <!-- TODO: fill this field -->
+          <!-- Reminders:
+              - you can use paragraph sections to make the abstract much more reader friendly.
+              - use <i></i> to highlight parts of text -->
+          <p>
+            Procedure step recognition (PSR) aims to identify all correctly completed steps and their sequential order in videos of procedural tasks. 
+            The existing state-of-the-art models rely solely on detecting assembly object states in individual video frames.
+            By neglecting temporal features, model robustness and accuracy are limited, especially when objects are partially occluded.
+            To overcome these limitations, we propose Spatio-Temporal Occlusion-Resilient Modeling for Procedure Step Recognition (STORM-PSR), a dual-stream framework for PSR that leverages both spatial and temporal features.
+            The assembly state detection stream operates effectively with unobstructed views of the object, while the spatio-temporal stream captures both spatial and temporal features to recognize step completions even under partial occlusion.
+            This stream includes a spatial encoder, pre-trained using a novel weakly supervised approach to capture meaningful spatial representations, and a transformer-based temporal encoder that learns how these spatial features relate over time.
+          </p>
+          <p>
+            STORM-PSR is evaluated on the MECCANO and IndustReal datasets, reducing the average delay between actual and predicted assembly step completions by 11.2\% and 26.1\%, respectively, compared to prior methods.
+            We demonstrate that this reduction in delay is driven by the spatio-temporal stream, which does not rely on unobstructed views of the object to infer completed steps.
+            The code for STORM-PSR, along with the newly annotated MECCANO labels, is made publicly available.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+<section class="section"> 
+  <div class="container is-max-desktop"></div>
+  <!-- Background section -->
+    <div class="columns is-centered">
+    <div class="column is-full-width">
+        <h2 class="title is-3">Background: Procedure Step Recognition (PSR)</h2>
+        <div class="content has-text-justified">
+        <p>
+            <i>Procedure Step Recognition (PSR)</i> aims to detect which steps of a multi-step task have been correctly completed, and in what order, from video—often egocentric—of real executions. Unlike generic action recognition, PSR must reason about correctness (not just occurrence), step granularity, and sequential dependencies, while handling noise from hands, tools, and frequent occlusions in industrial and assembly settings.
+        </p>
+        <p>
+            PSR systems typically combine cues about <i>what</i> objects look like (state changes) but not <i>how</i> they move over time (temporal dynamics). Therefore, in this current work, temporal features are leveraged in addition to spatial features.
+        </p>
+        <p>
+            For additional context and resources related to PSR, visit the <a href="https://timschoonbeek.github.io/industreal.html" target="_blank">IndustReal</a>.
+        </p>
+        </div>
+    </div>
+    </div>
+    <!--/ Background section -->
+  </div> 
+</section>
+
+
+<section class="section">  <!-- TODO: fill this entire section with content -->
+  <div class="container is-max-desktop">
+
+    <!-- Content section 1. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Methodology</h2>
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Spatio-temporal stream</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our clip-level spatio-temporal stream turns raw egocentric video into step-completion predictions by combining spatial embeddings with temporal reasoning. Each frame in a short clip is encoded by a spatial encoder \(f_{\text{spatial}}\) to produce per-frame tokens; a learnable [CLS] token and 1-D positional encodings are added, and a temporal transformer \(f_{\text{temporal}}\) aggregates the sequence. The final [CLS] state is passed to an MLP head that performs <i>multi-label</i> classification—multiple steps can complete within a single clip. Training uses clip-level supervision derived from the <i>net change</i> in PSR labels between the first and last frame (XOR), optimizing a binary cross-entropy loss. Because the transformer reasons over motion and context, it can fire even when the target object is partially occluded, complementing the state-detection stream and reducing completion delay.
+        </p>
+          <div class="content has-text-centered">
+            <img src="publications/stormpsr_temporal.png"
+                 class="interpolation-image"
+                 alt="Block diagram of the spatio-temporal stream: spatial embeddings + [CLS] → temporal transformer → MLP for multi-label step-completion."/>
+            <p>Spatial embeddings plus a [CLS] token feed a temporal transformer; the [CLS] output drives an MLP to predict which steps completed within the clip, with labels computed as the XOR between clip endpoints.</p>
+          </div>
+        </div>
+
+        <br/>
+        <!--/ Paragraph 1. -->
+
+        <!-- Paragraph 1. -->
+        <h3 class="title is-4">Weakly supervised spatial pretraining</h3>
+        <div class="content has-text-justified">
+          <p>
+            To make \(f_{\text{spatial}}\) robust to occlusions and viewpoint shifts, we introduce Key-Frame Sampling (KFS), a weakly supervised contrastive pretraining centered on step completion moments. For each annotated completion, frames are sampled within a short post-completion window \(t_f\) across many videos (optionally augmented with synthetic CAD renders). A 3-layer projection head \(g(\cdot)\) maps features to \(z\), and a supervised contrastive loss pulls together frames of the <i>same</i> step while pushing apart <i>different</i> steps. This aligns semantically equivalent appearances—hands blocking the object, different lighting, or camera motion—so downstream temporal modeling can recognize completions earlier and more reliably. The pretrained encoder is then frozen or fine-tuned within the spatio-temporal stream during PSR training.
+        </p>
+          <div class="content has-text-centered">
+            <img src="publications/stormpsr_spatial.png"
+                 class="interpolation-image"
+                 alt="Key-Frame Sampling (KFS) contrastive pretraining around step completions for occlusion-robust spatial features."/>
+            <p>KFS pretrains the spatial encoder with supervised contrastive learning on frames near step completions (and optional CAD images), pulling together same-step views and separating different steps to build occlusion-resilient features.</p>
+          </div>
+        </div>
+
+        <br/>
+        <!--/ Paragraph 1. -->
+
+      </div>
+    </div>
+    <!--/ Content section 1. -->
+  </div>
+
+  <!-- Repeat content sections if required -->
+
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX (coming soon!)</h2>
+    <pre><code>@article{x,
+  author    = {x},
+  title     = {x},
+  journal   = {x},
+  year      = {x},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> under the <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
