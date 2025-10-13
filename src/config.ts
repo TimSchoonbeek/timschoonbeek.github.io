@@ -16,6 +16,15 @@ export const siteConfig = {
   skills: ["Computer Vision", "Machine Learning", "AI for Manufacturing", "Augmented Reality", "Human-Computer Interaction", "Video Understanding", "Semi-Supervised Learning", "Domain Adaptation", "Imbalanced Classification", "Foundation Models"],
   publications: [
     {
+      title: "Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling",
+      authors: "<strong>Tim J. Schoonbeek</strong>, Shao-Hsuan Hung, Dan Lehman, Hans Onvlee, Tim Houben, Shao-Hsuan Hung, Jacek Kustra, Peter H.N. de With, Fons van der Sommen",
+      venue: "Computer Vision & Iamge Understanding",
+      description: "We propose to leverage temporal features towards procedure step recognition, significantly reducing the delay between correctly completed procedure steps and their subsequent recognition.",
+      link: "/stormpsr.html",
+      tags: ["Computer Vision", "Procedure Step Recognition", "Assembly Recognition"],
+      image: "/publications/stormpsr_teaser.png"
+    },
+    {
       title: "Supervised Representation Learning towards Generalizable Assembly State Recognition",
       authors: "<strong>Tim J. Schoonbeek</strong>, Goutham Balachandran, Hans Onvlee, Tim Houben, Shao-Hsuan Hung, Jacek Kustra, Peter H.N. de With, Fons van der Sommen",
       venue: "IEEE Robotics and Automation Letters (RA-L) and ICRA 2025",
