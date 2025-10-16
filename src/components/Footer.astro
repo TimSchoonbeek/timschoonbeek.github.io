@@ -47,6 +47,15 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           </a>
           <a
             href={siteConfig.social.linkedin}
+  
+      <!-- Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YJ2PGVYF5"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8YJ2PGVYF5');
+      </script>
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
